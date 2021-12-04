@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap");
+a.logo {
+  font-family: "Paytone One", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+h3.logo {
+  margin-top: 16px;
+  font-family: "Paytone One", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+.color-pink {
+  color: #f771d1;
+}
+/* html,
+body {
+  height: 100%;
+  margin: 0;
+} */
+
+footer {
+  height: 120px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-login {
+  font-family: "Noto Sans KR", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container-login::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.login-form {
+  position: relative;
+  z-index: 2;
+}
+.login-form h2 {
+  margin-bottom: 60px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #332b3b;
+  text-align: center;
+}
+.login-form form {
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.01);
+  border-radius: 10px;
+}
+
+.int-area {
+  position: relative;
+  width: 400px;
+  margin-top: 20px;
+}
+.int-area:first-child {
+  margin-top: 0;
+}
+.int-area input {
+  width: 100%;
+  padding: 20px 10px 10px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #999;
+  font-size: 18px;
+  color: #fff;
+  outline: none;
+}
+.int-area label {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 18px;
+  color: #999;
+  transition: top 0.5s ease;
+}
+.int-area label.warning {
+  color: red !important;
+  animation: warning 0.3s ease;
+  animation-iteration-count: 3;
+}
+@keyframes warning {
+  0% {
+    transform: translateX(-8px);
+  }
+  25% {
+    transform: translateX(8px);
+  }
+  50% {
+    transform: translateX(-8px);
+  }
+  75% {
+    tarnsform: translateX(8px);
+  }
+}
+.int-area input:focus + label,
+.int-area input:valid + label {
+  top: -2px;
+  font-size: 13px;
+  color: #f771d1;
+}
+.btn-area {
+  margin-top: 30px;
+}
+.btn-area button {
+  width: 100%;
+  height: 50px;
+  background: #f771d1;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  border-radius: 25px;
+}
+.caption {
+  margin-top: 20px;
+  text-align: center;
+}
+.caption a {
+  font-size: 15px;
+  color: #999;
+  text-decoration: none;
+}
