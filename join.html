@@ -4,7 +4,63 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/join.css" />
+    <title>Cocktailer - 회원가입</title>
   </head>
-  <body></body>
+  <style>
+    a {
+      text-decoration: none;
+      color: #333;
+      border: 0;
+      outline: none;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 0 20px 0 20px;
+      height: 65px;
+      background: #fff;
+      box-shadow: 0 2px 2px -2px #999;
+      z-index: 999;
+    }
+    .logoname {
+      font-family: "Paytone One", sans-serif;
+      font-size: 28px;
+      color: #332b3b;
+    }
+    .logoname span {
+      color: #f771d1;
+    }
+    .mainBtn {
+      padding: 8px 32px 8px 32px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    .mainBtn.mainBtn-color {
+      background: #f771d1;
+      color: #fff;
+    }
+    .mainBtn.mainBtn-color:hover {
+      background: #f771d1cc;
+      transition: all 0.3s ease-in-out;
+    }
+  </style>
+  <body>
+    <header>
+      <a href="index.html"
+        ><h1 class="logoname">COCK<span>TAILER</span></h1></a
+      >
+      <div>
+        <a href="login.html" class="mainBtn">Login</a>
+        <a href="#" class="mainBtn mainBtn-color">Join</a>
+      </div>
+    </header>
+  </body>
 </html>
