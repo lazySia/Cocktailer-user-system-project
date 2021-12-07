@@ -194,7 +194,7 @@
   }
 }
 
-@media screen and (min-width: 660px) and (max-width: 1049px) {
+@media screen and (max-width: 1049px) {
   /*TB*/
 
   /* ///// section2 ///// */
@@ -284,121 +284,23 @@
     left: 50%;
     padding: 0 10px;
     transform: translate(-50%);
-    width: 500px;
+    width: 100%;
     height: 110px;
   }
 
   .con-left {
+    width: 50%;
     float: left;
   }
   .con-right {
+    width: 50%;
     float: right;
   }
-  .con-right:nth-child(4) {
-    margin-right: 35px;
-  }
+
   .tab-des > table > td > img {
     padding: 0 20px;
   }
   .tab-des > table td {
     padding: 10px 30px;
-  }
-}
-
-@media screen and (max-width: 659px) {
-  /*SM*/
-
-  /* ///// 탭 컨텐츠 ///// */
-  .container {
-    width: 100%;
-    height: 850px;
-    margin: 0 auto;
-    margin-top: 60px;
-    padding: 15px;
-    border-radius: 5px;
-  }
-  .tabs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .tabs li {
-    display: inline-block;
-    padding: 10px 15px;
-    margin-left: 10px;
-    cursor: pointer;
-    text-transform: uppercase;
-    text-align: center;
-    color: #9542bf;
-  }
-
-  ul.tabs li.current {
-    color: #2b2e4a;
-    border-bottom: 2px solid #2b2e4a;
-  }
-
-  .tab-content {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    margin: 0 auto;
-    display: none;
-    clear: both;
-  }
-  .tab-content.current {
-    display: inherit;
-  }
-
-  .tab-content .tab-des {
-    position: absolute;
-    top: 40px;
-    width: 100%;
-    height: 100vh;
-    margin: 0 auto;
-  }
-
-  .tab-des h5 {
-    text-align: center;
-    font-size: 26px;
-    text-transform: capitalize;
-    line-height: 40px;
-  }
-  .tab-des p {
-    padding: 30px 5px;
-    font-size: 14px;
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  .tab-content > img {
-    position: absolute;
-    top: 230px;
-    width: 75%;
-    height: 230px;
-    left: 50%;
-    transform: translateX(-50%);
-    object-fit: cover;
-  }
-
-  .tab-des > table {
-    position: absolute;
-    top: 440px;
-    width: 80%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .tab-des > table td {
-    padding: 8px 30px;
-    font-size: 14px;
-  }
-  .tab-des > table td:nth-child(1) {
-    text-align: center;
-    width: 40%;
-  }
-  .tab-des > table td:nth-child(2) {
-    width: 60%;
-  }
-  .programBtn {
-    margin-bottom: 200px;
   }
 }

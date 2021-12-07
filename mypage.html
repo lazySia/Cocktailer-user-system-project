@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cocktailer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="jqueryUIplugin/jquery-ui.css" />
+    <link rel="shortcut icon" href="imgs/favicon.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/sub3.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="#"
+        ><h1 class="logoname">COCK<span>TAILER</span></h1></a
+      >
+      <div>
+        <a href="login.html" class="mainBtn">Login</a>
+        <a href="join.html" class="mainBtn mainBtn-color">Join</a>
+      </div>
+    </header>
+    <div>
+      <div>
+        <div>
+          <h3>My Page</h3>
+        </div>
+        <div>
+          <form id="myPageForm" action="" method="">
+            <p>
+              <label>ID</label>
+              <input type="text" id="id" name="id" readonly value="${ member.id }" />
+            </p>
+            <p>
+              <label>Name</label>
+              <input type="text" id="name" name="name" value="${ member.name }" required />
+            </p>
+            <p>
+              <label>Age</label>
+              <input type="number" id="age" name="age" value="${ member.age }" required />
+            </p>
+            <p>
+              <label>Phone Number</label>
+              <input type="tel" id="phone" name="phone" value="${ member.phone }" required />
+            </p>
+            <p>
+              <label>Email</label>
+              <input type="email" id="email" name="email" value="${ member.email }" required />
+            </p>
+            <p>
+              <button type="submit">회원정보 변경</button>
+            </p>
+          </form>
+          <br />
+          <form id="pwForm" action="../member/update_pw.do" method="post">
+            <input type="hidden" name="id" value="${ member.id }" />
+            <p>
+              <label>Password</label>
+              <input id="old_pwㅇ" name="old_pwㅇ" type="password" required />
+            </p>
+            <p>
+              <label>New Password</label>
+              <input id="pwd" name="pwd" type="password" required />
+            </p>
+            <p>
+              <label>Confirm</label>
+              <input type="password" id="pwd2" type="password" required />
+            </p>
+            <p>
+              <button type="submit" id="updatePwdBtn">비밀번호 변경</button>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

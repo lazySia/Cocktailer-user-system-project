@@ -1,0 +1,418 @@
+@charset "utf-8";
+
+ul li {
+  float: left;
+  list-style: none;
+}
+
+@media screen and (min-width: 1450px) {
+  /*FHD*/
+
+  section {
+    font-family: "Noto Sans KR", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  /* ///// section 3 Application ///// */
+  .contentbox {
+    width: 1300px;
+    height: 470px;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 120px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+  }
+  .ap-bg {
+    width: 1280px;
+    height: 450px;
+    padding: 30px;
+    background: url(../imgs/application-background.jpg);
+    border-radius: 10px;
+  }
+
+  .contactbox {
+    width: 870px;
+    height: 380px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    border-radius: 5px;
+    z-index: 1;
+  }
+  .contactbox::after {
+    width: 870px;
+    height: 380px;
+    margin: 0 auto;
+    padding: 20px;
+    content: "";
+    background: url(../imgs/application-gradient.jpg) repeat-x;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.85;
+    border-radius: 5px;
+  }
+
+  .contact-us {
+    float: left;
+    width: 40%;
+    height: 90%;
+    padding: 50px 40px;
+    text-align: center;
+  }
+  .contact-us h6 {
+    padding-bottom: 40px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 32px;
+    color: #333;
+  }
+  .contact-us p {
+    padding-bottom: 15px;
+    color: #333;
+  }
+
+  .contactbox .app-form {
+    float: right;
+    width: 60%;
+    height: 100%;
+    padding: 50px 40px;
+    background: #fff;
+    border-radius: 10px;
+  }
+  .app-form ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 35px;
+    list-style: none;
+  }
+  .app-form ul li p {
+    display: inline;
+  }
+  .app-form ul li:nth-child(2) input {
+    padding: 10px;
+  }
+  .app-form ul li:nth-child(3) input {
+    padding: 10px;
+  }
+  .app-form .leftbox {
+    width: 150px;
+  }
+  .app-form .rightbox {
+    width: 250px;
+  }
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    opacity: 1;
+  }
+  input[type="number"]:hover::-webkit-inner-spin-button {
+    height: 25px;
+  }
+
+  .app-form ul li p {
+    position: relative;
+  }
+  .app-form .datebox {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 21px;
+    opacity: 0.7;
+  }
+
+  .app-form li button {
+    height: 40px;
+    width: 120px;
+    margin: 0 auto;
+    outline: 0;
+    border: 0;
+    background: #fff;
+    border: 1px solid #333;
+    border-radius: 20px;
+    box-shadow: 0px 0px 0px 2px rgba(30, 22, 54, 0.4) inset;
+    transition: all 0.4s ease;
+  }
+  .app-form li button:hover {
+    color: #fff;
+    background: linear-gradient(#f7bff7, 10%, #e98ecf);
+    border: 1px solid transparent;
+    box-shadow: rgba(247, 174, 221, 0.7) 0 0px 0px 40px inset;
+  }
+}
+
+@media screen and (min-width: 1050px) and (max-width: 1499px) {
+  /*HD*/
+  section {
+    font-family: "Noto Sans KR", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  /* ///// Application ///// */
+  .contentbox {
+    width: 940px;
+    height: 460px;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 120px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+  }
+  .ap-bg {
+    width: 920px;
+    height: 435px;
+    padding: 30px;
+    background: url(../imgs/application-background.jpg);
+    border-radius: 10px;
+  }
+
+  .contactbox {
+    width: 830px;
+    height: 380px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+  }
+  .contactbox::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 790px;
+    height: 340px;
+    padding: 20px;
+    content: "";
+    background: url(../imgs/application-gradient.jpg) repeat-x;
+    z-index: -1;
+    opacity: 0.85;
+    border-radius: 5px;
+  }
+
+  .contact-us {
+    float: left;
+    width: 40%;
+    padding: 40px 0;
+    text-align: center;
+  }
+  .contact-us h6 {
+    padding-bottom: 40px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 32px;
+  }
+  .contact-us p {
+    padding-bottom: 15px;
+  }
+
+  .contactbox .app-form {
+    float: right;
+    width: 60%;
+    height: 100%;
+    padding: 40px 40px;
+    background: #fff;
+    border-radius: 10px;
+  }
+  .app-form ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 35px;
+    list-style: none;
+  }
+  .app-form ul li p {
+    display: inline;
+  }
+  .app-form ul li:nth-child(2) input {
+    padding: 10px;
+  }
+  .app-form ul li:nth-child(3) input {
+    padding: 10px;
+  }
+  .app-form .leftbox {
+    width: 140px;
+  }
+  .app-form .rightbox {
+    width: 220px;
+  }
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    opacity: 1;
+  }
+  input[type="number"]:hover::-webkit-inner-spin-button {
+    height: 25px;
+  }
+
+  .app-form ul li p {
+    position: relative;
+  }
+  .app-form .datebox {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 21px;
+    opacity: 0.7;
+  }
+
+  .app-form li button {
+    height: 40px;
+    width: 120px;
+    margin: 0 auto;
+    outline: 0;
+    border: 0;
+    background: #fff;
+    border: 1px solid #333;
+    border-radius: 20px;
+    box-shadow: 0px 0px 0px 2px rgba(30, 22, 54, 0.4) inset;
+    transition: all 0.4s ease;
+  }
+  .app-form li button:hover {
+    color: #fff;
+    background: linear-gradient(#f7bff7, 10%, #e98ecf);
+    border: 1px solid transparent;
+    box-shadow: rgba(247, 174, 221, 0.7) 0 0px 0px 40px inset;
+  }
+}
+
+@media screen and (max-width: 1049px) {
+  /*TB*/
+  section {
+    font-family: "Noto Sans KR", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  /* section3 application*/
+
+  .contentbox {
+    margin: 60px auto;
+  }
+
+  .contactbox {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 80%;
+    height: 600px;
+    margin: 0 auto;
+    background: url(../imgs/application-gradient-tb.jpg) repeat-x;
+    border-radius: 10px;
+  }
+
+  .contact-us {
+    display: flex;
+    align-items: center;
+  }
+  .contact-us h6 {
+    float: left;
+    width: 40%;
+    text-align: center;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+  }
+
+  .us-cont {
+    float: right;
+    width: 60%;
+    margin-top: 50px;
+  }
+
+  .us-cont p {
+    margin: 0 auto;
+    line-height: 35px;
+    text-align: center;
+  }
+
+  .contactbox .app-form {
+    width: 95%;
+    height: 340px;
+    padding: 50px 85px;
+    margin: 50px auto 15px;
+    background: #fff;
+    border-radius: 10px;
+  }
+  .app-form ul li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 35px;
+    list-style: none;
+  }
+  .app-form ul {
+    background: pink;
+  }
+  .app-form ul li p {
+    display: inline;
+  }
+  .app-form ul li:nth-child(2) input {
+    padding: 10px;
+  }
+  .app-form ul li:nth-child(3) input {
+    padding: 10px;
+  }
+  .app-form .leftbox {
+    width: 95%;
+  }
+  .app-form .rightbox {
+    width: 100%;
+  }
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    opacity: 1;
+  }
+  input[type="number"]:hover::-webkit-inner-spin-button {
+    height: 25px;
+  }
+
+  .app-form ul li p {
+    position: relative;
+  }
+  .app-form .datebox {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 21px;
+    opacity: 0.7;
+  }
+
+  .app-form li button {
+    height: 40px;
+    width: 120px;
+    margin: 0 auto;
+    outline: 0;
+    border: 0;
+    background: #fff;
+    border: 1px solid #333;
+    border-radius: 20px;
+    box-shadow: 0px 0px 0px 2px rgba(30, 22, 54, 0.4) inset;
+    transition: all 0.4s ease;
+  }
+  .app-form li button:hover {
+    color: #fff;
+    background: linear-gradient(#f7bff7, 10%, #e98ecf);
+    border: 1px solid transparent;
+    box-shadow: rgba(247, 174, 221, 0.7) 0 0px 0px 40px inset;
+  }
+}
