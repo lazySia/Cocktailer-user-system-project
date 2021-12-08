@@ -18,12 +18,14 @@
   </head>
   <body>
     <header>
-      <a href="index.html"
-        ><h1 class="logoname">COCK<span>TAILER</span></h1></a
-      >
+      <a href="goIndex.do">
+        <h1 class="logoname">COCK<span>TAILER</span></h1>
+      </a>
       <div>
-        <a href="login.html" class="mainBtn">Login</a>
-        <a href="join.html" class="mainBtn mainBtn-color">Join</a>
+        <a href="mypage.do?id=${sessionScope.id}" class="mainBtn">MyPage</a>
+        <a href="logout.do" class="mainBtn mainBtn-color">Logout</a>
+        <a href="goLogin.do" class="mainBtn">Login</a>
+        <a href="goJoin.do" class="mainBtn mainBtn-color">Join</a>
       </div>
     </header>
 
@@ -43,24 +45,32 @@
                 <p>평일 10:30 ~ 20:30</p>
               </div>
             </div>
-            <div class="app-form">
-              <ul>
-                <li>
-                  <p><input type="radio" name="app" checked /> 칵테일 클래스</p>
-                  <p><input type="radio" name="app" /> 럼 공장 투어</p>
-                  <p><input type="radio" name="app" /> 럼 시음 투어</p>
-                </li>
-                <li>
-                  <p><input type="text" placeholder="신청자 이름 입력" class="leftbox" /></p>
-                  <p><input type="text" placeholder="전화번호 입력" class="rightbox" /></p>
-                </li>
-                <li>
-                  <p><input type="number" placeholder="인원수 입력" class="leftbox" /></p>
-                  <p><input type="text" id="date" class="rightbox" placeholder="희망 날짜 선택" /><img src="./imgs/application-icon.png" class="datebox" /></p>
-                </li>
-                <li><button>신청 하기</button></li>
-              </ul>
-            </div>
+            <form action="programForm.do" method="POST">
+              <div class="app-form">
+                <ul>
+                  <li>
+                    <p><input type="radio" name="pname" value="a" checked /> 칵테일 클래스</p>
+                    <p><input type="radio" name="pname" value="b" /> 럼 공장 투어</p>
+                    <p><input type="radio" name="pname" value="c" /> 럼 시음 투어</p>
+                  </li>
+                  <li>
+                    <p><input type="text" name="name" placeholder="신청자 이름 입력" class="leftbox" value="a" /></p>
+                    <p><input type="text" name="phone" placeholder="전화번호 입력" class="rightbox" value="b" /></p>
+                    <input type="hidden" name="id" value="userid" />
+                  </li>
+                  <li>
+                    <p><input type="number" name="numofpeople" placeholder="인원수 입력" class="leftbox" /></p>
+                    <p>
+                      <input type="text" id="date" name="date" class="rightbox" placeholder="희망 날짜 선택" /><img
+                        src="./imgs/application-icon.png"
+                        class="datebox"
+                      />
+                    </p>
+                  </li>
+                  <li><button>신청 하기</button></li>
+                </ul>
+              </div>
+            </form>
           </div>
         </div>
       </div>
