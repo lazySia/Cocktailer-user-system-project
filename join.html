@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="shortcut icon" href="imgs/favicon.ico" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/join.css" />
     <title>Cocktailer - 회원가입</title>
@@ -55,48 +56,51 @@
   </style>
   <body>
     <header>
-      <a href="index.html"
-        ><h1 class="logoname">COCK<span>TAILER</span></h1></a
-      >
+      <a href="goIndex.do">
+        <h1 class="logoname">COCK<span>TAILER</span></h1>
+      </a>
       <div>
-        <a href="login.html" class="mainBtn">Login</a>
-        <a href="#" class="mainBtn mainBtn-color">Join</a>
+        <a href="mypage.do?id=${sessionScope.id}" class="mainBtn">MyPage</a>
+        <a href="logout.do" class="mainBtn mainBtn-color">Logout</a>
+        <a href="goLogin.do" class="mainBtn">Login</a>
+        <a href="goJoin.do" class="mainBtn mainBtn-color">Join</a>
       </div>
     </header>
+
     <div class="container-login">
       <section class="login-form">
         <h2>Join Cocktailer</h2>
-        <form action="" method="">
+        <form action="join.do" method="POST">
           <div class="int-area">
             <input type="text" name="id" id="id" autocomplete="off" required />
             <label for="id">ID</label>
           </div>
           <div class="int-area">
-            <input type="password" name="pw" id="pw" autocomplete="off" required />
-            <label for="pw">PASSWORD</label>
+            <input type="password" name="pwd" id="pwd" autocomplete="off" required />
+            <label for="pwd">PASSWORD</label>
           </div>
           <div class="int-area">
-            <input type="text" name="id" id="id" autocomplete="off" required />
-            <label for="id">이름</label>
+            <input type="text" name="name" id="name" autocomplete="off" required />
+            <label for="name">이름</label>
           </div>
           <div class="int-area">
-            <input type="number" name="id" id="id" autocomplete="off" required />
-            <label for="id">나이</label>
+            <input type="number" name="age" id="age" min="19" autocomplete="off" required />
+            <label for="age">나이</label>
           </div>
           <div class="int-area">
-            <input type="tel" name="id" id="id" autocomplete="off" required />
-            <label for="id">휴대폰 번호</label>
+            <input type="tel" name="phone" id="phone" autocomplete="off" required />
+            <label for="phone">휴대폰 번호</label>
           </div>
           <div class="int-area">
-            <input type="email" name="id" id="id" autocomplete="off" />
-            <label for="id">이메일(선택)</label>
+            <input type="email" name="email" id="email" autocomplete="off" />
+            <label for="email">이메일(선택)</label>
           </div>
           <div class="btn-area">
             <button id="btn" type="submit">Join</button>
           </div>
         </form>
         <div class="caption">
-          <p>Already have an account?<a href="login.html"> Log in →</a></p>
+          <p>Already have an account?<a href="goLogin.do"> Log in →</a></p>
         </div>
       </section>
     </div>
