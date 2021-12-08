@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="shortcut icon" href="imgs/favicon.ico" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/login.css" />
     <title>Cocktailer - 로그인</title>
+    <script></script>
     <style>
       a {
         text-decoration: none;
@@ -54,33 +56,35 @@
   </head>
   <body>
     <header>
-      <a href="index.html"
-        ><h1 class="logoname">COCK<span>TAILER</span></h1></a
-      >
+      <a href="goIndex.do">
+        <h1 class="logoname">COCK<span>TAILER</span></h1>
+      </a>
       <div>
-        <a href="#" class="mainBtn">Login</a>
-        <a href="join.html" class="mainBtn mainBtn-color">Join</a>
+        <a href="mypage.do?id=${sessionScope.id}" class="mainBtn">MyPage</a>
+        <a href="logout.do" class="mainBtn mainBtn-color">Logout</a>
+        <a href="goLogin.do" class="mainBtn">Login</a>
+        <a href="goJoin.do" class="mainBtn mainBtn-color">Join</a>
       </div>
     </header>
 
     <div class="container-login">
       <section class="login-form">
         <h2>Log in to Cocktailer</h2>
-        <form action="" method="">
+        <form action="login.do" method="POST">
           <div class="int-area">
             <input type="text" name="id" id="id" autocomplete="off" required />
             <label for="id">ID</label>
           </div>
           <div class="int-area">
-            <input type="password" name="pw" id="pw" autocomplete="off" required />
-            <label for="pw">PASSWORD</label>
+            <input type="password" name="pwd" id="pwd" autocomplete="off" required />
+            <label for="pwd">PASSWORD</label>
           </div>
           <div class="btn-area">
             <button id="btn" type="submit">Log In</button>
           </div>
         </form>
         <div class="caption">
-          <p>Dont't have an account?<a href="join.html"> Create One →</a></p>
+          <p>Dont't have an account?<a href="goJoin.do"> Create One →</a></p>
         </div>
       </section>
     </div>
