@@ -16,12 +16,14 @@
   </head>
   <body>
     <header>
-      <a href="#"
-        ><h1 class="logoname">COCK<span>TAILER</span></h1></a
-      >
+      <a href="goIndex.do">
+        <h1 class="logoname">COCK<span>TAILER</span></h1>
+      </a>
       <div>
-        <a href="login.html" class="mainBtn">Login</a>
-        <a href="join.html" class="mainBtn mainBtn-color">Join</a>
+        <a href="mypage.do?id=${sessionScope.id}" class="mainBtn">MyPage</a>
+        <a href="logout.do" class="mainBtn mainBtn-color">Logout</a>
+        <a href="goLogin.do" class="mainBtn">Login</a>
+        <a href="goJoin.do" class="mainBtn mainBtn-color">Join</a>
       </div>
     </header>
 
@@ -133,7 +135,8 @@
       </div>
     </section>
     <div class="programBtn">
-      <a href="program.html">프로그램 신청하기 →</a>
+      <a href="program.do?id=${sessionScope.id}">프로그램 신청하기 →</a>
+      <a href="goLogin.do">프로그램 신청하기 →</a>
     </div>
     <footer>
       <h6>COCKTAILER</h6>
